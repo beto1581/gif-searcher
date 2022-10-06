@@ -11,17 +11,17 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Gif Searcher
         </h1>
 
         <SearchBar />
         <GridDemo
-        onGifClick={(gif, e) => {
-          console.log("gif", gif);
-          e.preventDefault();
-          setModalGif(gif);
-        }}
-      />
+          onGifClick={(gif, e) => {
+            console.log("gif", gif);
+            e.preventDefault();
+            setModalGif(gif);
+          }}
+        />
       </main>
 
       <footer>
