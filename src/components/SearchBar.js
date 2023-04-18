@@ -1,22 +1,24 @@
 import React from "react";
+import {MdImageSearch} from 'react-icons/md';
 
 export default function SearchBar() {
     return (
-        <form >
-            <div className="serach-container">
-                <div className="search-input">
+        
+            <div className="search-bar">
+                <form > 
+                <div className="search-bar__search-input">
                     <input
                         type="text"
                         name="search-input"
                         id="search-input"
-                        className="input-search" />
+                        className="input-search" 
+                        placeholder="What are you looking for? type something"/>
                 </div>
-                <div className="icon">
-
+                <div className="search-bar__icon">
+                 <MdImageSearch />
                 </div>
-
+                </form>
             </div>
-        </form>
+       
     );
-
 }

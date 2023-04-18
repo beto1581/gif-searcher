@@ -1,27 +1,31 @@
 import Head from 'next/head'
 import SearchBar from '@components/SearchBar';
 import GridDemo from '@components/GridDemo';
+import SingleGif from '@components/SingleGif';
+  
+
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Gif Searcher </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">
+        {/* <h1 className="title">
           Gif Searcher
-        </h1>
+        </h1> */}
 
         <SearchBar />
-        <GridDemo
+        {/* <SingleGif
           onGifClick={(gif, e) => {
             console.log("gif", gif);
             e.preventDefault();
             setModalGif(gif);
           }}
-        />
+        /> */}
+        {/* <GridDemo></GridDemo> */}
       </main>
 
       <footer>
